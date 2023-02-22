@@ -1,0 +1,24 @@
+
+import java.util.*;
+
+public class SetExample6 {
+
+    public static void main (String[] argv)
+    {
+	// Read from file and get an array, one array element for each person.
+	// Thus, people[i] is of type DataSet and people[i].strings has
+	// all the strings associated with the i-th person.
+	DataSet[] people = DataTool.getDataSetsAsArray ("datafortwo");
+
+	LinkedList<String> intersection = computeIntersection (people[0].strings, people[1].strings);
+	System.out.println ("Intersection between " + people[0].name + " and " + people[1].name + " = " + intersection);
+    }
+
+
+    static LinkedList<String> computeIntersection (LinkedList<String> listA, LinkedList<String> listB)
+    {
+	// INSERT YOUR CODE HERE.
+    }
+
+}
+
