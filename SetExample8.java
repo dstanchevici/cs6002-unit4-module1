@@ -31,7 +31,7 @@ public class SetExample8 {
 	    System.out.println (" " + listA.get(i) );
 	}
 	for (int i = 0; i < listB.size(); i++) {
-	    if ( listA.contains (listB.get(i)) == false  ) {
+	    if ( ! listA.contains (listB.get(i))  ) {
 		System.out.println (" " + listB.get(i) );
 	    }
 	}

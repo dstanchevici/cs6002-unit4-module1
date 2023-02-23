@@ -1,0 +1,23 @@
+class ListItem {
+
+    String data;
+    ListItem next;
+    
+}
+
+
+public class StrangeExample {
+
+    public static void main (String[] argv)
+    {
+	ListItem first = new ListItem();
+	first.data = "Seinfeld";
+
+	ListItem second = new ListItem();
+	second.data = "Friends";
+
+	first.next = second;
+
+	
+    }
+}
