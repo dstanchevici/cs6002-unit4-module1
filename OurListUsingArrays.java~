@@ -1,0 +1,15 @@
+public class OurListUsingArrays {
+
+    String[] strings = new String [100];
+    int numStrings = 0;
+
+    public void add (String s)
+    {
+	if (numStrings < 100) {
+	    strings[numStrings++] = s;
+	}
+    }
+
+    
+
+}

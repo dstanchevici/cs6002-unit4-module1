@@ -12,13 +12,16 @@ public class SetExample6 {
 	String fileName = "datafortwo.txt";
 	DataSet[] people = DataTool.getDataSetsAsArray (fileName);
 	LinkedList<String> intersection = computeIntersection (people[0].strings, people[1].strings);
+	System.out.println ("*************************************************");
 	System.out.println ("In " + fileName + ": Intersection between " + people[0].name + " and " + people[1].name + " = " + intersection);
 
 	fileName = "largedataset.txt";
 	people = DataTool.getDataSetsAsArray (fileName);
 	DataSet[] peopleWithMostInCommon = findPeopleWithMostInCommon (people);
 	intersection = computeIntersection (peopleWithMostInCommon[0].strings, peopleWithMostInCommon[1].strings);
+	System.out.println ("-----------");
 	System.out.println ("In " + fileName + ", " + peopleWithMostInCommon[0].name + " and " +peopleWithMostInCommon[1].name + " share the most favorite shows in common. Their shared favorites are " + intersection);
+	System.out.println ("*************************************************");
 	
     }
 

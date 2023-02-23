@@ -1,0 +1,9 @@
+public class TestOurList {
+
+    public static void main (String[] argv)
+    {
+	OurListUsingArrays shows = new OurListUsingArrays ();
+	
+    }
+
+}

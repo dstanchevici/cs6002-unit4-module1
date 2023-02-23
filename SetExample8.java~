@@ -1,0 +1,30 @@
+
+import java.util.*;
+
+public class SetExample8 {
+
+    public static void main (String[] argv)
+    {
+	// Create an instance of the data structure.
+	OurListUsingArrays favoriteShows1 = new OurListUsingArrays();
+	favoriteShows1.add ("Seinfeld");
+	favoriteShows1.add ("Friends");
+	favoriteShows1.add ("Sherlock");
+	favoriteShows1.add ("Simpsons");
+	favoriteShows1.add ("Yes minister");
+
+	// Create a second instance and add some elements.
+	OurListUsingArrays favoriteShows2 = new OurListUsingArrays();
+	favoriteShows2.add ("Walking Dead");
+	favoriteShows2.add ("Simpsons");
+	favoriteShows2.add ("Game of Thrones");
+	favoriteShows2.add ("Grey's Anatomy");
+	favoriteShows2.add ("Seinfeld");
+
+	// Compute set intersection and the difference favoriteShows1-favoriteShows2
+	computeUnion (favoriteShows1, favoriteShows2);
+    }
+
+    // INSERT YOUR CODE.
+
+}
