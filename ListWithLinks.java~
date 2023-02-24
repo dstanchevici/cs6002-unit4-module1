@@ -1,0 +1,16 @@
+class ListItem {
+
+    String data;
+    ListItem next;
+}
+
+public class ListWithLinks {
+
+    ListItem front = null;
+    ListItem rear = null;
+
+    int numItems = 0;
+
+    
+
+}
