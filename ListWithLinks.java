@@ -72,7 +72,7 @@ public class ListWithLinks {
 	else {
 	    ListItem listPtr = front;
 	    while (listPtr != null) {
-		System.out.println (listPtr.data);
+		System.out.println (" " + listPtr.data);
 		listPtr = listPtr.next;
 	    }
 	}
