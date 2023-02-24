@@ -9,7 +9,7 @@ public class ListWithLinksExample {
 	favoriteShows1.add ("Sherlock");
 	favoriteShows1.add ("Simpsons");
 	favoriteShows1.add ("Yes minister");
-       	
+	
 	ListWithLinks favoriteShows2 = new ListWithLinks();
 	favoriteShows2.add ("Walking Dead");
 	favoriteShows2.add ("Simpsons");
@@ -18,8 +18,31 @@ public class ListWithLinksExample {
 	favoriteShows2.add ("Seinfeld");
 
 	computeIntersection (favoriteShows1, favoriteShows2);
+	ListWithLinks union = computeUnion (favoriteShows1, favoriteShows2);
+	System.out.println ("Union:");
+	union.print ();
     }
 
+    
+    static ListWithLinks computeUnion (ListWithLinks listA, ListWithLinks listB)
+    {
+	ListWithLinks listC = new ListWithLinks ();
+	
+	for (int i=0; i<listA.size(); i++) {
+	    listC.add (listA.get(i));
+	}
+
+	for (int i=0; i<listB.size(); i++) {
+	    String s = listB.get(i);
+	    if ( !listA.contains(s) ) {
+		listC.add (s);
+	    }	    
+	}
+
+
+	return listC;
+    }
+    
 
     static void computeIntersection (ListWithLinks listA, ListWithLinks listB)
     {

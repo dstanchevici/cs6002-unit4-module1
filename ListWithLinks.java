@@ -64,4 +64,18 @@ public class ListWithLinks {
 	return false;
     }
 
+    public void print ()
+    {
+	if (front == null) {
+	    System.out.println ("The list is empty.");
+	}
+	else {
+	    ListItem listPtr = front;
+	    while (listPtr != null) {
+		System.out.println (listPtr.data);
+		listPtr = listPtr.next;
+	    }
+	}
+    }
+
 }
