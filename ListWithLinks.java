@@ -64,7 +64,7 @@ public class ListWithLinks {
 	return false;
     }
 
-    public void print ()
+    public void printList ()
     {
 	if (front == null) {
 	    System.out.println ("The list is empty.");

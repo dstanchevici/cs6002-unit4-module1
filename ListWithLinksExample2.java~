@@ -1,5 +1,5 @@
 
-public class ListWithLinksExample {
+public class ListWithLinksExample2 {
 
     public static void main (String[] argv)
     {
@@ -9,7 +9,7 @@ public class ListWithLinksExample {
 	favoriteShows1.add ("Sherlock");
 	favoriteShows1.add ("Simpsons");
 	favoriteShows1.add ("Yes minister");
-	
+
 	ListWithLinks favoriteShows2 = new ListWithLinks();
 	favoriteShows2.add ("Walking Dead");
 	favoriteShows2.add ("Simpsons");
@@ -17,20 +17,17 @@ public class ListWithLinksExample {
 	favoriteShows2.add ("Grey's Anatomy");
 	favoriteShows2.add ("Seinfeld");
 
-	computeIntersection (favoriteShows1, favoriteShows2);
+	System.out.println ("First list:");
+	favoriteShows1.printList ();
+	System.out.println ("Second list:");
+	favoriteShows2.printList ();
+
+	ListWithLinks unionList = computeUnion (favoriteShows1, favoriteShows2);
+
+	System.out.println ("Union:");
+	unionList.printList ();
     }
 
-    
-
-    static void computeIntersection (ListWithLinks listA, ListWithLinks listB)
-    {
-	System.out.println ("Intersection:");
-	for (int i=0; i<listA.size(); i++) {      // Calls the size() method in ListWithLinks
-	    String s = listA.get(i);              // Calls the get() method
-	    if ( listB.contains(s) ) {            // The contains() method
-		System.out.println ("  " + s);
-	    }
-	}
-    }
+    // INSERT YOUR CODE HERE (and in ListWithLinks.java)
 
 }
