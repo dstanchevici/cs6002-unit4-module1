@@ -29,6 +29,54 @@ public class ListWithLinks {
 	numItems ++;
     }
 
+    public int size ()
+    {
+	return numItems;
+    }
+
+    public String get (int i)
+    {
+	if (i >= numItems || i < 0) {
+	    return null;
+	}
+
+	ListItem listPtr = front;
+	for (int j=1; j<=i; j++) {
+	    listPtr = listPtr.next;
+	}
+
+	return listPtr.data;
+    }
+
+    public boolean contains (String s)
+    {
+	if (front == null) {
+	    return false;
+	}
+
+	ListItem listPtr = front;
+	while (listPtr != null) {
+	    if ( listPtr.data.equals(s) ) {
+		return true;
+	    }
+	    listPtr = listPtr.next;
+	}
+	return false;
+    }
+
+    public void printList ()
+    {
+	if (front == null) {
+	    System.out.println ("The list is empty.");
+	}
+	else {
+	    ListItem listPtr = front;
+	    while (listPtr != null) {
+		System.out.println (" " + listPtr.data);
+		listPtr = listPtr.next;
+	    }
+	}
+    }
 
     public void printWithAddresses ()
     {
